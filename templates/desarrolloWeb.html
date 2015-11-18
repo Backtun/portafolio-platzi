@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Mi portafolio.la</title>
+				<!--script type="text/javascript">
+			alert("Hola Ya se programar");
+		</script-->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="../static/css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/responsive.css">
+		<body background="../static/images/fondo2.jpg">
+
+<!-- least.js 2 CSS file -->
+<link href="../static/css/least.min.css" rel="stylesheet" />
+
+	<head>
+	<body>
+		<header id="yo" class="Header">
+			<nav class="MainMenu">
+				<ul class="MainMenu-list">
+					<li class="MainMenu-item">
+						<a href="yo" class="MainMenu-link">Yo</a>
+					</li>
+					<li class="MainMenu-item">
+						<a href="perfil" class="MainMenu-link">Perfil</a>
+					</li>
+					<li class="MainMenu-item">
+						<a href="trabajo" class="MainMenu-link">Trabajo</a>
+					</li>
+					<li class="MainMenu-item">
+						<a href="contacto" class="MainMenu-link">Contacto</a>
+					</li>
+				</ul>
+			</nav>
+				<figure class="Header-imageContainer">
+					<img src="../static/images/yo.jpg" alt="Imagen Personal" class="Header-image" />
+					<figcaption class="Header-imageDescription">
+						<a class="Header-link" href="https://twitter.com/KevinDominRiq/" target="_black"> @KevinDominRiq</a>
+					</figcaption>
+					<p class="Header-name">Kevin Dominguez</p>
+				</figure>
+		</header>
+		<section id="perfil" class="Profile">
+			<div class="u-containerDefault">
+			<h2 class="Profile-title u-title">Mi perfil</h2>
+			<p class="Profile-description"><strong>Hola!</strong> Si llegaste hasta aqui puedes ver mi portafolio y contactarme</p>
+			<a class="Profile-link" href="https://twitter.com/KevinDominRiq/" target="_black">@KevinDominRiq</a>
+			<a class="Profile-link" href="https://www.facebook.com/kevin.dominguezriquelme" target="_black">Kevin Dominguez Riquelme</a>
+			<a class="Profile-link" href="https://www.facebook.com/HackingLatinoamerica" target="_black">HackingLatinoamerica</a>
+			</div>
+		</section>
+<div class="u-containerDefault"></div>
+
+<section id="least">
+
+  <!-- Least Gallery: Fullscreen Preview -->
+  <div class="least-preview"></div>
+
+    <!-- Least Gallery: Thumbnails -->
+    <ul class="least-gallery">
+      <!-- 1th thumbnail -->
+        <li>
+          <a href="../static/images/yo.jpg" data-subtitle="View Picture" data-caption="<strong>Bold text</strong> normal caption text" >
+            <img src="../static/media/thumbnails/01.jpg" alt="Alt Image Text" />
+          </a>
+        </li>
+        <li>
+          <a href="../static/media/big/02.jpg" data-subtitle="View Picture" data-caption="<strong>Bold text</strong> normal caption text" >
+            <img src="../static/media/thumbnails/02.jpg" alt="Alt Image Text" />
+          </a>
+        </li>
+        <li>
+          <a href="../static/media/big/03.jpg" data-subtitle="View Picture" data-caption="<strong>Bold text</strong> normal caption text" >
+            <img src="../static/media/thumbnails/03.jpg" alt="Alt Image Text" />
+          </a>
+        </li>
+        <li>
+          <a href="../static/media/big/04.jpg" data-subtitle="View Picture" data-caption="<strong>Bold text</strong> normal caption text" >
+            <img src="../static/media/thumbnails/04.jpg" alt="Alt Image Text" />
+          </a>
+        </li>
+    </ul>
+
+</section>
+<!-- Least Gallery end -->
+
+		<section id="trabajo" class="Work">
+			<div class="u-containerDefault">
+			<h2 class="Work-title u-title">Mi trabajo</h2>
+			</div>
+			<article class="Work-item">
+				<figure class="Work-imageContainer">
+					<img class="Work-image" src="../static/images/avatar.jpg" alt="Es la descrión de mi imagen">
+					<figcaption class="Work-description"> Website de Kevin</figcaption>
+				</figure>
+			</article>
+			<article class="Work-item">
+				<figure class="Work-imageContainer">
+					<img class="Work-image" src="../static/images/thumb1.jpg" alt="Es la descrión de mi imagen">
+					<figcaption class="Work-description"> Website de Kevin</figcaption>
+				</figure>
+			</article>
+			<article class="Work-item">
+				<figure class="Work-imageContainer">
+					<img class="Work-image" src="../static/images/thumb2.jpg" alt="Es la descrión de mi imagen">
+					<figcaption class="Work-description"> Website de Kevin</figcaption>
+				</figure>
+			</article>
+			<article class="Work-item">
+				<figure class="Work-imageContainer">
+					<img class="Work-image" src="../static/images/thumb3.jpg" alt="Es la descrión de mi imagen">
+					<figcaption class="Work-description"> Website de Kevin</figcaption>
+				</figure>
+			</article>
+		</section>
+		<footer id="contacto" class="Footer">
+			<div class="Footer-left">
+			<h3 class="Footer-title">Contacto</h3>
+			<p class="Footer-description">Si tienes una sugerencia o quieres trabajar conmigo, <br />ponte en contacto con este formulario.</p>
+			</div>
+			<form class="Footer-form">
+				<input class="Footer-formInput" type="text" placeholder="nombre" />
+				<input class="Footer-formInput" type="email" placeholder="email" />
+				<textarea class="Footer-textarea" placeholder="motivo"></textarea>
+				<button type="submit" class="Footer-button" >Contactarme</button>
+			</form>
+		</footer>
+<!-- jQuery library -->
+<script src="../static/js/libs/jquery/2.0.2/jquery.min.js"></script>
+<!-- least.js 2 library -->
+<script src="../static/js/libs/least/least.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.least-gallery').least();
+  });
+</script>
+
+
+	</body>
+</html>
